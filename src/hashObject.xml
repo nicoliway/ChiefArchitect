@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="HashObject Testing Suite">
+
+  <test name="HashObject Tests" verbose="2"> 
+    <classes>     
+      <class name="HashObjectTest_1_string"/>
+      <class name="HashObjectTest_2_long"/>
+      <class name="HashObjectTest_3_integer"/>
+      <class name="HashObjectTest_4_double"/>
+      <class name="HashObjectTest_5_float"/>      
+      <class name="HashObjectTest_6_character"/> 
+      <class name="HashObjectTest_7_boolean"/>      
+      <class name="HashObjectTest_8_byte"/> 
+    </classes>
+  </test> <!-- HashObject Tests -->
+   
+</suite> <!-- HashObject Testing Suite -->

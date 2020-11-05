@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Hash Table Testing Suite">
+
+  <test name="Hash Table Tests with Default Settings" verbose="2">
+    <classes>     
+      <class name="HashTableTest_0_newTable_default"/>
+      
+      <class name="HashTableTest_01a_emptyHashTable_putA0_A0_default"/>
+      <class name="HashTableTest_01b_emptyHashTable_putD3_D3_default"/>
+      <class name="HashTableTest_01c_emptyHashTable_putG6_G6_default"/>
+      <class name="HashTableTest_01d_emptyHashTable_putJ9_J9_default"/> 
+      <class name="HashTableTest_01e_emptyHashTable_putM12_M12_default"/>
+      
+      <class name="HashTableTest_10a_A0_removeA0_emptyHashTable_default"/>
+      <class name="HashTableTest_10b_C2_removeC2_emptyHashTable_default"/>
+      <class name="HashTableTest_10c_E4_removeE4_emptyHashTable_default"/>
+      <class name="HashTableTest_10d_G6_removeG6_emptyHashTable_default"/>
+      <class name="HashTableTest_10e_I8_removeI8_emptyHashTable_default"/>
+      <class name="HashTableTest_10f_K10_removeK10_emptyHashTable_default"/>
+      <class name="HashTableTest_10g_M12_removeM12_emptyHashTable_default"/>
+      <class name="HashTableTest_10h_N13_removeN13_emptyHashTable_default"/>
+            
+      <class name="HashTableTest_11a_A0_putA0_A0_default"/>     
+      <class name="HashTableTest_11b_D3_putD3_D3_default"/>    
+      <class name="HashTableTest_11c_G6_putG6_G6_default"/>
+      <class name="HashTableTest_11d_J9_putJ9_J9_default"/>
+      <class name="HashTableTest_11e_M12_putM12_M12_default"/>  
+      
+      <class name="HashTableTest_12a_A0_putB1_A0B1_default"/>  
+      <class name="HashTableTest_12b_C2_putD3_C2D3_default"/>
+      <class name="HashTableTest_12c_E4_putF5_E4F5_default"/>
+      <class name="HashTableTest_12d_G6_putH7_G6H7_default"/>
+      <class name="HashTableTest_12e_I8_putJ9_I8J9_default"/>
+      <class name="HashTableTest_12f_K10_putL11_K10L11_default"/>
+      <class name="HashTableTest_12g_L11_putM12_L11M12_default"/>
+      
+      <class name="HashTableTest_12h_A0_putG13_A0G13_default"/>
+      <class name="HashTableTest_12i_B1_putH14_B1H14_default"/>
+      <class name="HashTableTest_12j_C2_putI15_C2I15_default"/>     
+      <class name="HashTableTest_12k_D3_putJ16_D3J16_default"/>
+      <class name="HashTableTest_12l_E4_putK17_E4K17_default"/>
+      <class name="HashTableTest_12m_F5_putL18_F5L18_default"/>
+      <class name="HashTableTest_12n_G6_putM19_G6M19_default"/>
+      <class name="HashTableTest_12o_H7_putN20_H7N20_default"/>
+      <class name="HashTableTest_12p_I8_putA21_I8A21_default"/>
+      <class name="HashTableTest_12q_J9_putB22_J9B22_default"/>
+      <class name="HashTableTest_12r_K10_putD10_K10D10_default"/>
+      <class name="HashTableTest_12s_L11_putE11_L11E11_default"/>
+      <class name="HashTableTest_12t_M12_putF12_M12F12_default"/>
+      <class name="HashTableTest_12u_N13_putFG13_N13G13_default"/>
+              
+    </classes>
+  </test> <!-- Hash Table Tests with Default Settings -->
+  
+    <test name="Hash Table Tests with alpha = 0.75, capacity = 13, using Double Hashing" verbose="2"> 
+    <classes>     
+      <class name="HashTableTest_0_newTable_75_13_double"/>
+      
+      <class name="HashTableTest_01a_emptyHashTable_putA0_A0_75_13_double"/>
+      <class name="HashTableTest_01b_emptyHashTable_putD3_D3_75_13_double"/>
+      <class name="HashTableTest_01c_emptyHashTable_putG6_G6_75_13_double"/>
+      <class name="HashTableTest_01d_emptyHashTable_putJ9_J9_75_13_double"/> 
+      <class name="HashTableTest_01e_emptyHashTable_putM12_M12_75_13_double"/>
+
+      <class name="HashTableTest_10a_A0_removeA0_emptyHashTable_75_13_double"/>
+      <class name="HashTableTest_10b_C2_removeC2_emptyHashTable_75_13_double"/>
+      <class name="HashTableTest_10c_E4_removeE4_emptyHashTable_75_13_double"/>
+      <class name="HashTableTest_10d_G6_removeG6_emptyHashTable_75_13_double"/>
+      <class name="HashTableTest_10e_I8_removeI8_emptyHashTable_75_13_double"/>
+      <class name="HashTableTest_10f_K10_removeK10_emptyHashTable_75_13_double"/>
+      <class name="HashTableTest_10g_M12_removeM12_emptyHashTable_75_13_double"/>     
+      <class name="HashTableTest_10h_N13_removeN13_emptyHashTable_75_13_double"/>      
+            
+      <class name="HashTableTest_11a_A0_putA0_A0_75_13_double"/>     
+      <class name="HashTableTest_11b_D3_putD3_D3_75_13_double"/>    
+      <class name="HashTableTest_11c_G6_putG6_G6_75_13_double"/>
+      <class name="HashTableTest_11d_J9_putJ9_J9_75_13_double"/>
+      <class name="HashTableTest_11e_M12_putM12_M12_75_13_double"/>  
+      
+      <class name="HashTableTest_12a_A0_putB1_A0B1_75_13_double"/>  
+      <class name="HashTableTest_12b_C2_putD3_C2D3_75_13_double"/>
+      <class name="HashTableTest_12c_E4_putF5_E4F5_75_13_double"/>
+      <class name="HashTableTest_12d_G6_putH7_G6H7_75_13_double"/>
+      <class name="HashTableTest_12e_I8_putJ9_I8J9_75_13_double"/>
+      <class name="HashTableTest_12f_K10_putL11_K10L11_75_13_double"/>
+      <class name="HashTableTest_12g_L11_putM12_L11M12_75_13_double"/>
+      
+      <class name="HashTableTest_12h_A0_putG13_A0G13_75_13_double"/>
+      <class name="HashTableTest_12i_B1_putH14_B1H14_75_13_double"/>
+      <class name="HashTableTest_12j_C2_putI15_C2I15_75_13_double"/>     
+      <class name="HashTableTest_12k_D3_putJ16_D3J16_75_13_double"/>
+      <class name="HashTableTest_12l_E4_putK17_E4K17_75_13_double"/>
+      <class name="HashTableTest_12m_F5_putL18_F5L18_75_13_double"/>
+      <class name="HashTableTest_12n_G6_putM19_G6M19_75_13_double"/>
+      <class name="HashTableTest_12o_H7_putN20_H7N20_75_13_double"/>
+      <class name="HashTableTest_12p_I8_putA21_I8A21_75_13_double"/>
+      <class name="HashTableTest_12q_J9_putB22_J9B22_75_13_double"/>
+      <class name="HashTableTest_12r_K10_putD10_K10D10_75_13_double"/>
+      <class name="HashTableTest_12s_L11_putE11_L11E11_75_13_double"/>
+      <class name="HashTableTest_12t_M12_putF12_M12F12_75_13_double"/>
+      <class name="HashTableTest_12u_N13_putFG13_N13G13_75_13_double"/>
+                
+    </classes>
+  </test> <!-- Hash Table Tests with alpha = 0.75, capacity = 13, using Double Hashing -->
+  
+  <test name="Hash Table Test for Tables without Quadratic Probing" verbose="2">
+    <classes>     
+      <class name="HashTableTest_quadratic"/>              
+    </classes>
+  </test> <!-- Hash Table Test for Tables without Quadratic Probing -->
+  
+  
+   
+</suite> <!-- Hash Table Testing Suite -->

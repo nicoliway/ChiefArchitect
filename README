@@ -1,0 +1,56 @@
+****************
+* Project 3
+* CS 321 Fall
+* 10/28/2019
+* Nicolas Way
+**************** 
+
+OVERVIEW:
+
+This Java project will consume data held in files and populate hash tables using
+linear, double and quadratic hash probing. 
+
+INCLUDED FILES:
+
+HashObject.java - objects that store values and keys
+HashTable.java - a hash table that stores hash objects
+HashTest.java - driver class that takes command line arguments
+README - this file
+
+COMPILING AND RUNNING:
+
+Run the following commands in the main project directory to compile:
+
+$ javac *.java 
+
+Run the compiled classes with the following command:
+
+$ java HashTest 0.5 95191 example.txt 2 1
+
+PROGRAM DESIGN AND IMPORTANT CONCEPTS:
+
+This program will store data in 3 different hash tables (one for each type of probing). The program will
+attempt to track and report probing statistics like the number of duplicates in a data set, and the 
+average number of probes required to insert one data point into each table using a different probing 
+methodology. If desired, the program will also return debug data that will allow a user to see the contents
+of the hash table. 
+
+TESTING:
+This program was tested by running unit test provided by the BSU staff. I performed integration testing
+with the sample files provided and created several of my own sample files to assist with the verification.
+Each test failure was investigated and debugged. Data regressions in the files provided were also debugged.
+The program was written to catch out of illegal arguments, illegal states, indexes out of bounds and 
+files not found. The program is somewhat fragile- if a user put in the command line arguments in an incorrect
+order, or if the input type did not match the data held in the file, the program would not fail gracefully.
+
+DISCUSSION:
+The project seems fairly straightforward until I realized I couldn't think of a way to elegantly handle the
+various data types that could be held in a file. I tried to minimize the amount of duplicated code and keep my
+main method somewhat easy to read. My hash table was hitting Illegal State exceptions for being full
+inappropriately so I changed it to depend on the size of the array rather than the iterator in the while loop.
+This seems to be a deviation from my classmates so I thought it worth noting. I couyld not get my average number
+of probes to match with the solutions to the provided files, but I think my calculations are correct for what
+I think the average number of probes is supposed to represent. So either my understanding of what that field is
+supposed to represent is incorrect or there was a typo in the solutions.
+
+
